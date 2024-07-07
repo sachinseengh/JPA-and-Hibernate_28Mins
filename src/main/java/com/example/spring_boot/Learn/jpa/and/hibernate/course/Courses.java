@@ -7,11 +7,11 @@ import jakarta.persistence.Id;
 public class Courses {
 	
 	@Id
-	private int id;
+	private Long id;
 	private String name;
 	private String author;
 	
-	public Courses(int id, String name, String author) {
+	public Courses(Long id, String name, String author) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -22,10 +22,10 @@ public class Courses {
 		super();
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getName() {
