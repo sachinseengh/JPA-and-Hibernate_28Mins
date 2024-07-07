@@ -1,8 +1,12 @@
 package com.example.spring_boot.Learn.jpa.and.hibernate.course;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity(name="course")
 public class Courses {
 	
-	
+	@Id
 	private int id;
 	private String name;
 	private String author;
